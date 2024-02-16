@@ -5,9 +5,26 @@
 
 body{
     font-family: cursive;
-    background-color:azure;
+    background-color:aliceblue;
 }
 
 #brand-animation{
     height: 300px;
+}
+
+.sm-divider{
+    height:5px;
+}
+
+#duvet-cleaning{
+    background-color: rgb(77, 166, 238);
+}
+
+.thick-underline{
+    text-decoration: underline;
+    text-decoration-thickness: 14px;
+}
+
+#wash-fold-prices, #ironing-prices{
+    background-color: azure;
 }
