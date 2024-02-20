@@ -4,7 +4,7 @@
 }
 
 body{
-    font-family: cursive;
+    /* font-family: cursive; */
 }
 
 #brand-animation{
@@ -40,4 +40,12 @@ body{
 
 .price-icons{
     width:44px;
+}
+
+
+@media (max-width: 768px) {
+    .service-img{
+        max-height: 300px;
+        /* width: 100%; */
+    }
 }
