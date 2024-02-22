@@ -77,3 +77,33 @@ header{
 .animated-heading.active::before{
     width: 100%;
 }
+
+#brand-heading{
+    position:relative;
+    z-index: 1;
+}
+
+#brand-heading::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    z-index: -1;
+    background-image: url('../assets/img/dirty_t_shirt.png');
+    animation: rotateShirts 6s linear infinite;
+    background-size: cover;
+}
+
+@keyframes rotateShirts {
+    0%, 100%{
+        background-image: url('../assets/img/clean_t_shirt.png');
+        transform: rotateY(0deg);
+
+    }
+    50%{
+        background-image: url('../assets/img/dirty_t_shirt.png');
+        transform: rotateY(180deg);
+    }
+}
