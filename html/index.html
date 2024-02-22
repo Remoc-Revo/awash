@@ -5,9 +5,10 @@
         <title>A-WASH LAUNDRY</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="../styles/index.css">
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     </head>
     <body class="bg-main">
-        <header class="position-md-fixed top-0 w-100 bg-main ">
+        <header class="position-fixed top-0 w-100 bg-main ">
             <div class=" bg-dark-custom text-center ">
                 <p class="container text-white p-md-2">Next to Lexo Petrol Station, UTAWALA | TEL- 
                     <a href="tel:0746-220-179" class="text-white">0746-220-179</a>/ 
@@ -28,14 +29,19 @@
                     </div>
                 </div>
             </div>
-            <div id="our-services" class="p-5 col-md-8 col-lg-6">
-                <h3 class="fw-bold mb-5 thick-underline">OUR SERVICES</h3>
-                <p>
-                    At A-WASH LAUNDRY, we provide high-quality and efficient laundry services with a focus on customer satisfaction and attention to detail.
-                    <br>We specialize in bulk wash and fold, ironing, dry cleaning, duvet cleaning, and carpet cleaning catering to the needs of individuals and businesses, and specifically targeting the working class who do not have time for laundry.
-                    <br>Our team of professionals use the best equipment to provide the best service and handle your laundry with care.
-                </p>
+
+            <div class="d-md-flex gap-5 p-5 mt-2 mb-5 row">
+                <div class="col-md-3"></div>
+                <div id="our-services" class="col-md-8 col-lg-6">
+                    <h3 class="fw-bold mb-5 " id="our-services-heading">OUR SERVICES</h3>
+                    <p>
+                        At A-WASH LAUNDRY, we provide high-quality and efficient laundry services with a focus on customer satisfaction and attention to detail.
+                        <br>We specialize in bulk wash and fold, ironing, dry cleaning, duvet cleaning, and carpet cleaning catering to the needs of individuals and businesses, and specifically targeting the working class who do not have time for laundry.
+                        <br>Our team of professionals use the best equipment to provide the best service and handle your laundry with care.
+                    </p>
+                </div>
             </div>
+            
 
             <div id="bulk-wash" class="bg-white d-md-flex d-sm-block gap-5  p-5 mt-2 mb-5 row">
                 <img src="../assets/img/bulk_wash.jpg" alt="bulk wash and fold img" class="col-md-3  service-img">
@@ -60,18 +66,7 @@
                 </div>
             </div>
 
-            <div id="free-pick-up" class="bg-body d-md-flex d-sm-block gap-5 p-5 mt-2 mb-5 row ">
-                <img src="../assets/img/free_pick_and_delivery.jpg" alt="free pick up and delivery img" class="col-md-3 service-img">
-                <div class="col-md-8 col-lg-6">
-                    <h1 class="fw-bold mb-5 text-decoration-underline">FREE PICK UP AND DELIVERY</h1>
-                    <p class="fs-5">
-                        Say goodbye to the hassle of lugging your laundry to the laundromat and let us take care of everything.
-                        Schedule a time that works for you, and we'll make sure your laundry is picked up and delivered right to your door.
-                    </p>
-                </div>
-            </div>
-
-            <div id="commercial-laundry" class="d-md-flex d-sm-block gap-5 p-5 mt-2 mb-5 row"> 
+            <div id="commercial-laundry" class="bg-white d-md-flex d-sm-block gap-5 p-5 mt-2 mb-5 row"> 
                 <img src="../assets/img/commercial_laundry.jpg" alt="commercial laundry img" class="col-md-3 service-img">
                 <div class="col-md-8 col-lg-6">
                     <h1 class="fw-bold mb-5 text-decoration-underline">COMMERCIAL LAUNDRY</h1>
@@ -86,7 +81,7 @@
             <div id="duvet-cleaning" class="d-md-flex d-sm-block gap-5 mt-2 mb-5 p-5 row">
                 <img src="../assets/img/duvet_cleaning.jpg" alt="duvet cleaning img" class="col-md-3 service-img">
                 <div class="col-md-8 col-lg-6">
-                    <h1 class="text-white fw-bold mb-5">DUVET CLEANING</h1>
+                    <h1 class="fw-bold mb-5">DUVET CLEANING</h1>
                     <p class="fs-5 fw-bold">
                         A clean and comfortable duvet is essential for a good night's sleep. Our professional duvet cleaning services ensure that your duvet is thoroughly 
                         cleaned and sanitized, removing all dirt, dust, and allergens. 
@@ -96,7 +91,7 @@
                 
             </div>
 
-            <div id="carpet-cleaning" class="d-md-flex d-sm-block gap-5 mt-2 mb-5 p-5 row">
+            <div id="carpet-cleaning" class="bg-white d-md-flex d-sm-block gap-5 mt-2 mb-5 p-5 row">
                 <img src="../assets/img/carpet_cleaning.jpg" alt="carpet cleaning img" class="col-md-3 service-img">
                 <div class="col-md-8 col-lg-6">
                     <h1 class="fw-bold mb-5 text-decoration-underline">CARPET CLEANING</h1>
@@ -106,6 +101,17 @@
                     </P>
                 </div>
                 
+            </div>
+
+            <div id="free-pick-up" class="d-md-flex d-sm-block gap-5 p-5 mt-2 mb-5 row ">
+                <img src="../assets/img/free_pick_and_delivery.jpg" alt="free pick up and delivery img" class="col-md-3 service-img">
+                <div class="col-md-8 col-lg-6">
+                    <h1 class="fw-bold mb-5 text-decoration-underline">FREE PICK UP AND DELIVERY</h1>
+                    <p class="fs-5">
+                        Say goodbye to the hassle of lugging your laundry to the laundromat and let us take care of everything.
+                        Schedule a time that works for you, and we'll make sure your laundry is picked up and delivered right to your door.
+                    </p>
+                </div>
             </div>
 
             <div class="bg-white sm-divider"></div>
@@ -245,5 +251,6 @@
         </footer>
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!-- <script src="../scripts/index.js"></script> -->
     </body>
 </html>

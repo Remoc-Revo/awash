@@ -4,7 +4,7 @@
 }
 
 body{
-    /* font-family: cursive; */
+    /* font-family:sans-serif; */
 }
 
 #brand-animation{
@@ -21,9 +21,9 @@ body{
     height:5px;
 }
 
-#duvet-cleaning{
+/* #duvet-cleaning{
     background-color: rgb(77, 166, 238);
-}
+} */
 
 .thick-underline{
     text-decoration: underline;
@@ -48,7 +48,35 @@ body{
         max-height: 300px;
         /* width: 100%; */
     }
+
+    #brand-animation{
+        margin-top:100px;
+    }
+
     #brand-animation h1{
         font-size: 40px;
     }
 }
+
+/* ????what is this for??????
+#our-services-heading{
+    position: relative;
+
+} */
+
+
+#our-services-heading::before{
+    content: "";
+    position: absolute;
+    width:0;
+    height: 2px;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s ease-in-out;    
+}
+
+#our-services-heading.active::before{
+    width: 100%;
+}
+
