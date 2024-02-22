@@ -25,9 +25,8 @@ body{
     background-color: rgb(77, 166, 238);
 } */
 
-.thick-underline{
-    text-decoration: underline;
-    text-decoration-thickness: 14px;
+header{
+    z-index: 1000;
 }
 
 #wash-fold-prices, #ironing-prices{
@@ -58,25 +57,23 @@ body{
     }
 }
 
-/* ????what is this for??????
-#our-services-heading{
+.animated-heading{
     position: relative;
+    z-index: 1;
+} 
 
-} */
 
-
-#our-services-heading::before{
+.animated-heading::before{
     content: "";
     position: absolute;
     width:0;
-    height: 2px;
+    height: 10px;
     background-color: #000;
     bottom: 0;
     left: 0;
-    transition: width 0.5s ease-in-out;    
+    transition: width 1s ease-in-out;    
 }
 
-#our-services-heading.active::before{
+.animated-heading.active::before{
     width: 100%;
 }
-
