@@ -93,13 +93,14 @@ header{
     z-index: -1;
     background-image: url('../assets/img/dirty_t_shirt.png');
     animation: rotateShirts 6s linear infinite;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 @keyframes rotateShirts {
     0%, 100%{
         background-image: url('../assets/img/clean_t_shirt.png');
-        transform: rotateY(0deg);
 
     }
     50%{
