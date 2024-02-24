@@ -4,17 +4,21 @@
 }
 
 body{
-    font-family: "Brush Script MT",cursive;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #brand-animation{
+    height: 600px;
+    width: 600px;
     margin-top:200px;
-    border: 12px solid black;
+    border: 10px solid black;
+    
 }
 
 #brand-animation h1{
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 900;
+    top: 20%;
 }
 
 .sm-divider{
@@ -49,11 +53,13 @@ header{
     }
 
     #brand-animation{
-        margin-top:100px;
+        margin-top:150px;
+        height: 350px;
+        width: 350px;
     }
 
     #brand-animation h1{
-        font-size: 40px;
+        font-size: 28px;
     }
 }
 
