@@ -4,7 +4,9 @@
 }
 
 body{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:"Pompiere", sans-serif;
+    font-size: 30px;
+    font-style: normal;
 }
 
 #brand-animation{
