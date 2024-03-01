@@ -140,3 +140,7 @@ header{
     transform: translate(-50%,-50%);
 
 }
+
+.carousel-item{
+    height: 170px;
+}
