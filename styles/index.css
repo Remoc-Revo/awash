@@ -47,27 +47,10 @@ header{
     width:44px;
 }
 
-
-@media (max-width: 768px) {
-    body{
-        font-size: 19px;
-    }
-    
-    .service-img{
-        max-height: 300px;
-        /* width: 100%; */
-    }
-
-    #brand-animation{
-        margin-top:150px;
-        height: 350px;
-        width: 350px;
-    }
-
-    #brand-animation h1{
-        font-size: 28px;
-    }
+.carousel-item{
+    height: 170px;
 }
+
 
 .animated-heading{
     position: relative;
@@ -141,6 +124,29 @@ header{
 
 }
 
-.carousel-item{
-    height: 170px;
+
+
+
+
+@media (max-width: 768px) {
+    body{
+        font-size: 19px;
+    }
+    
+    .service-img{
+        max-height: 300px;
+        /* width: 100%; */
+    }
+
+    #brand-animation{
+        margin-top:150px;
+        height: 350px;
+        width: 350px;
+    }
+
+    #brand-animation h1{
+        font-size: 28px;
+    }
+
+
 }
